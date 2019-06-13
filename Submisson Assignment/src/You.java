@@ -20,11 +20,50 @@
  */
 public class You{
 
-	private String firstName;
-	private String lastName;
-	private String favoriteAnimal;
-	private int age;
+	private String firstName= "Omkaar";
+	private String lastName = "Mahadevan";
+	private String favoriteAnimal = "carribean reef shark";
+	private String animal;
+	private int age = 15;
+	String FullName= null;
+    
+	public You() {
+		// TODO Auto-generated constructor stub
+		
+		
+	}
+	public String getFullName()
+	{
+	FullName = firstName + " ";
+	return FullName +=lastName;
+}
+	public String setFavoriteAnimal(String animal, String favoriteAnimal)
+	{
+		animal = favoriteAnimal;
+		return animal;
+		
+	}
+	public int happyBirthday()
+	{
+		System.out.println("Happy Birthday");
+		age++;
+		return age;
+		
+	}
+	
+	public String toSt() 
+    { 
+        return("Hi my name is "+ this.getFullName()+     ", "+ " favorite animal and age after birthday: "+ this.setFavoriteAnimal(animal ,favoriteAnimal)+"," + this.happyBirthday() ); 
+               
+    } 
+	
+	public static void main(String[] args) {
+		
+        You Omkaar = new You();
+        
+        System.out.println(Omkaar.toSt());
 
-	// Write your code here
+	}
 	
 }
+
